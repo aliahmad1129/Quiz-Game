@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  /* background: linear-gradient(125deg, #004e92 0%, #000428 100%); */
+  /* background: linear-gradient(125deg, #232526 0%, #757F9A 100%); */
+  background: linear-gradient(125deg, #71b280 0%, #123e5e 100%);
+  /* background: linear-gradient(125deg, #2C3E50 0%, #B08D57 100%); */
+  /* background: linear-gradient(125deg, #C0A062 0%, #1A1A1A 100%); */
+  /* background: linear-gradient(125deg, #6A0572 0%, #2E003E 100%); */
+  /* background: linear-gradient(125deg, #414345 0%, #232526 100%); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  text-align: center;
+  width: 60vw;
+  max-width: 700px;
+  padding: 30px;
+  padding-bottom: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+}
+
+h1 {
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  color: rgb(32, 32, 32);
+}
+
+.screen {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.welcome-screen {
+  animation: fadeIn 0.5s;
+}
+
+.question-screen {
+  animation: slideIn 0.5s;
+}
+
+.results-screen {
+  animation: zoomIn 0.5s;
+}
+
+.welcome-message {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: rgb(56, 56, 56);
+}
+
+.category-select {
+  text-align: left;
+  margin: 20px 0;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #a0a0a0;
+  margin-top: 10px;
+  background-color: #f0f0f0;
+}
+
+
+.btn {
+  background: linear-gradient(125deg, #757F9A 0%, #232526 100%);
+  padding: 12px 24px;
+  color: #ddd;
+  font-weight: 700;
+  border-style: none;
+  border-radius: 24px;
+  transition: all 0.5s;
+  font-size: 1rem;
+  margin: 20px auto 0;
+  cursor: pointer;
+  box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+  transform: translate(-2px, -1px);
+  box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(125deg, #6d7894 0%, #131516 100%);
+}
+
+.btn-option {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  margin: 10px 0;
+  background-color: #f5f5f5;
+  border: 2px solid #c8c8c8;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-option:hover {
+  background-color: #f2f2f2;
+  border: 2px solid #123E5E;
+}
+
+.btn-option.correct {
+  background-color: #d4edda;
+  border-color: #b0daba;
+  color: #155724;
+}
+
+.btn-option.incorrect {
+  background-color: #f8d7da;
+  border-color: #e8b7bb;
+  color: #721c24;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(125deg, #004e92 30%, #000428 100%);
+  border-radius: 5px;
+  transition: width 0.3s;
+}
+
+.question-text {
+  font-size: 1.5rem;
+  margin: 10px 0 20px;
+  color: #333;
+}
+
+.feedback {
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  display: none;
+}
+
+.feedback.correct {
+  background-color: #d4edda;
+  color: #155724;
+  display: block;
+}
+
+.feedback.incorrect {
+  background-color: #f8d7da;
+  color: #721c24;
+  display: block;
+}
+
+.score-display {
+  font-size: 24px;
+  margin: 20px 0;
+  color: #333;
+}
+
+.question-count {
+  color: #123E5E;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.timer-parent {
+  text-align: right;
+  margin-right: 20px;
+
+}
+
+.timer {
+  font-size: 18px;
+  display: inline;
+  color: #e63946;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.celebrate {
+  font-size: 60px;
+  margin-bottom: 20px;
+  animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

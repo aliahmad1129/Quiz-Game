@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style-practice.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <!-- welcome screen  -->
+     <div class="screen welcome-screen active" id="welcome-screen">
+        <h1>Interactive Quiz Game</h1>
+        <div class="welcome-message">
+          <p>Test your knowledge with this fun quiz! Select a category and answer as many questions as possible correctly.</p>
+          <p>You will have 15 seconds to answer each question. Good luck!</p>
+        </div>
+
+        <div class="category-select">
+          <label for="category">Select a category: </label>
+          <select name="" id="category">
+            <option value="general">General Knowledge</option>
+            <option value="science">Science</option>
+            <option value="history">History</option>
+            <option value="geography">Geography</option>
+          </select>
+        </div>
+
+        <button class="btn" id="start-btn">Start Quiz</button>
+     </div>
+
+     <!-- question screen  -->
+      <div class="question-screen screen" id="question-screen">
+        <div class="question-count" id="question-count">Question 1 of 10</div>
+        <div class="progress-bar">
+          <div class="progress" id="progress-bar">
+          </div>
+        </div>
+        <div class="timer-parent">
+          <div class="timer" id="timer">Time left: 15 sec</div>
+        </div>
+        <div class="question-text" id="question-text">What is the capital of France?</div>
+        <div class="options" id="options">
+          // options will be added via js
+        </div>
+        <div class="feedback" id="feedback">Correct! Welldone.</div>
+        <button class="btn" id="next-btn" style="display: none;">Next Question</button>
+      </div>
+
+      <!-- result screen  -->
+       <div class="screen result-screen" id="results-screen">
+        <div class="celebrate" id="celebration">🎉</div>
+        <h1>Quiz Completed!</h1>
+        <div class="score-display" id="score-display">Your score: 7/10</div>
+        <div class="result-message">Great job!</div>
+        <button class="btn" id="restart-btn">Play Again</button>
+       </div>
+  </div>
+  <script src="script-practice.js"></script>
+</body>
+</html>
