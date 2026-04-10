@@ -284,55 +284,255 @@ const questionBank = {
   ],
   history: [
     {
-      question: "In which year did World War II end?",
-      options: ["1945", "1939", "1941", "1950"],
-      answer: 0
-    },
-    {
-      question: "Who was the first President of the United States?",
-      options: ["Thomas Jefferson", "John Adams", "George Washington", "Abraham Lincoln"],
-      answer: 2
-    },
-    {
-      question: "The ancient city of Rome was built on how many hills?",
-      options: ["5", "7", "9", "3"],
-      answer: 1
-    },
-    {
-      question: "Who was the first woman to win a Nobel Prize?",
-      options: ["Marie Curie", "Rosalind Franklin", "Florence Nightingale", "Jane Addams"],
-      answer: 0
-    },
-    {
-      question: "Which ancient civilization built the Machu Picchu?",
-      options: ["Aztec", "Maya", "Inca", "Olmec"],
-      answer: 2
-    },
-    {
-      question: "Who was the first man to step on the moon?",
-      options: ["Buzz Aldrin", "Neil Armstrong", "Yuri Gagarin", "Michael Collins"],
-      answer: 1
-    },
-    {
-      question: "Who discovered America in 1492?",
-      options: ["Christopher Columbus", "Ferdinand Magellan", "Marco Polo", "Vasco da Gama"],
-      answer: 0
-    },
-    {
-      question: "Which empire built the Great Wall of China?",
-      options: ["Ming", "Han", "Qin", "Tang"],
-      answer: 2
-    },
-    {
-      question: "Who was the first Caliph after Prophet Muhammad (PBUH)?",
-      options: ["Ali ibn Abi Talib", "Uthman ibn Affan", "Abu Bakr Siddique", "Umar ibn al-Khattab"],
-      answer: 2
-    },
-    {
-      question: "In which year did Pakistan gain independence?",
-      options: ["1945", "1946", "1947", "1948"],
-      answer: 2
-    },
+    question: "Who was the first President of the Constitution Assembly of Pakistan?",
+    options: ["Liaquat Ali Khan", "Quaid-e-Azam", "Moulvi Tameez-ud-Din", "Sardar Abdur Rab Nishtar"],
+    answer: 1
+  }, // [1]
+  {
+    question: "After how many years Pakistan got its first constitution?",
+    options: ["5 years", "7 years", "9 years", "11 years"],
+    answer: 2
+  }, // [2]
+  {
+    question: "What document was firstly drafted to give pace to constitution making process?",
+    options: ["Representative Act", "Pakistan Act", "Independence Act", "Objective Resolution"],
+    answer: 3
+  }, // [2]
+  {
+    question: "When the Constituent Assembly passed the Objective Resolution?",
+    options: ["14th February 1949", "12th March 1949", "9th June 1949", "15th August 1949"],
+    answer: 1
+  }, // [2]
+  {
+    question: "When Mohammad Ali Bogra presented Bogra Formula in the assembly?",
+    options: ["January 1953", "April 1953", "September 1953", "October 1953"],
+    answer: 3
+  }, // [3]
+  {
+    question: "Who was Mohammad Ali Bogra?",
+    options: ["Prime Minister", "Foreign Minister", "Law Minister", "Parliament Minister"],
+    answer: 0
+  }, // [3]
+  {
+    question: "What is the other name of Mohammad Ali Bogra Formula?",
+    options: ["New Law of Pakistan", "Pakistan Report", "Third Report", "Constitutional Formula"],
+    answer: 3
+  }, // [3]
+  {
+    question: "When first constitution of Pakistan was enforced?",
+    options: ["8th June 1956", "23rd March 1956", "14th August 1956", "25th December 1956"],
+    answer: 1
+  }, // [3]
+  {
+    question: "Who was the Prime Minister of Pakistan during enforcement of first constitution?",
+    options: ["Mohammad Ali Bogra", "Khwaja Nazim Uddin", "Choudhry Mohammad Ali", "Ibrahim Ismail Chundrigar"],
+    answer: 2
+  }, // [4]
+  {
+    question: "What official name was given to Pakistan in 1956 constitution?",
+    options: ["United States of Pakistan", "Republic of Pakistan", "Islamic Pakistan", "Islamic Republic of Pakistan"],
+    answer: 3
+  }, // [4]
+  {
+    question: "What age was prescribed for President in 1956 constitution?",
+    options: ["40 years", "45 years", "50 years", "55 years"],
+    answer: 0
+  }, // [4, 5]
+  {
+    question: "In respect of religion what term was set for President and Prime Minister in 1956 constitution?",
+    options: ["He may be a Muslim", "He must not be Hindu", "He must not be Christian", "He must be a Muslim (applicable only on president)"],
+    answer: 3
+  }, // [5]
+  {
+    question: "What was the official language declared in 1956 constitution?",
+    options: ["Urdu", "Bengali", "Hindi", "Both a & b"],
+    answer: 3
+  }, // [5, 6]
+  {
+    question: "Who abrogated 1956 constitution?",
+    options: ["Ayub Khan", "Tikka Khan", "Iskander Mirza", "Yahya Khan"],
+    answer: 2
+  }, // [6]
+  {
+    question: "When the first constitution was abrogated and Martial Law was proclaimed?",
+    options: ["May 1958", "June 1958", "October 1958", "December 1958"],
+    answer: 2
+  }, // [6]
+  {
+    question: "When Ayub Khan enforced new constitution in Pakistan?",
+    options: ["9th January 1962", "6th February 1962", "13th March 1962", "8th June 1962"],
+    answer: 3
+  }, // [6, 7]
+  {
+    question: "Which kind of system of Government was introduced by the 1962 constitution?",
+    options: ["Autonomous", "Presidential", "Bicameral", "Confederate"],
+    answer: 1
+  }, // [7]
+  {
+    question: "When the constitution of 1962 was abrogated?",
+    options: ["20th March 1969", "29th March 1969", "4th April 1969", "14th April 1969"],
+    answer: 0
+  }, // [7]
+  {
+    question: "Who abrogated 1962 constitution and became CMLA?",
+    options: ["Gen. Tikka Khan", "Gen. Ahsan Khan", "Gen. Mansoor Khan", "Gen Yahya Khan"],
+    answer: 3
+  }, // [7]
+  {
+    question: "When Mr. Z.A. Bhutto launched a new constitution in the country?",
+    options: ["11th August 1973", "14th August 1973", "17th August 1973", "21st August 1973"],
+    answer: 1
+  }, // [7, 8]
+  {
+    question: "Which kind of system of Government was introduced in 1973 constitution?",
+    options: ["Parliamentary", "Presidential", "Basic Democracy", "Autonomous"],
+    answer: 0
+  }, // [8]
+  {
+    question: "Who elects the President according to 1973 constitution?",
+    options: ["National Assembly", "Senate", "Provincial Assemblies", "All of them"],
+    answer: 3
+  }, // [8]
+  {
+    question: "According to 1973 constitution who elects Prime Minister?",
+    options: ["Senate", "National Assembly", "President", "Provincial Assemblies"],
+    answer: 1
+  }, // [8, 9]
+  {
+    question: "In which constitution Bicameral Legislature was provided for the first time?",
+    options: ["1949", "1956", "1962", "1973"],
+    answer: 3
+  }, // [9]
+  {
+    question: "In constitution of 1973 what age is specified for a person to contest for the Election to National Assembly?",
+    options: ["25 years", "18 years", "20 years", "30 years"],
+    answer: 0
+  }, // [9]
+  {
+    question: "In constitution 1973 what number of seats in Senate was set?",
+    options: ["120 Seats", "115 Seats", "110 Seats", "100 Seats"],
+    answer: 3
+  }, // [9, 10]
+  {
+    question: "According to 1973 constitution what is the term of the office of President?",
+    options: ["6 years", "5 years", "4 years", "3 years"],
+    answer: 1
+  }, // [10]
+  {
+    question: "Article 58(2b) of constitution 1973 is about:",
+    options: ["Power of President to dismiss Army Chief", "Power of President to dissolve Provincial Assemblies", "Power of President to dissolve National Assembly", "Power of President to dissolve Senate"],
+    answer: 2
+  }, // [10, 11]
+  {
+    question: "How many articles were there in the constitution of 1956?",
+    options: ["200 Articles", "259 Articles", "254 Articles", "234 Articles"],
+    answer: 3
+  }, // [11]
+  {
+    question: "How many articles were there in 1962 constitution?",
+    options: ["225 Articles", "250 Articles", "275 Articles", "290 Articles"],
+    answer: 1
+  }, // [11]
+  {
+    question: "How many articles are there in 1973 constitution?",
+    options: ["220 Articles", "240 Articles", "260 Articles", "280 Articles"],
+    answer: 3
+  }, // [11, 12]
+  {
+    question: "In constitution 1973 who were declared none Muslims?",
+    options: ["Qadiyanis", "Hindus", "Christians", "Jews"],
+    answer: 0
+  }, // [12]
+  {
+    question: "When did Fatima Jinnah join All India Muslim league?",
+    options: ["1939", "1927", "1947", "1949"],
+    answer: 0
+  }, // [12]
+  {
+    question: "Pakistan’s National Flag was prepared by:",
+    options: ["Abdur-rehaman Chugtai", "Liaqat Ali", "Chaudhary Rehmat Ali", "Ameer-ud-din Qadwai"],
+    answer: 3
+  }, // [12]
+  {
+    question: "Pakistan’s standard time was suggested by:",
+    options: ["Liaqat Ali", "Maulana Mazhar-ud-din", "Chaudhary Rehmat Ali", "Professor Muhammad Anwar"],
+    answer: 3
+  }, // [12]
+  {
+    question: "Pakistan’s first coin was issued on:",
+    options: ["3rd June 1948", "6th June 1949", "3rd January 1948", "None of these"],
+    answer: 2
+  }, // [13]
+  {
+    question: "Where is the biggest Salt Mine located in Pakistan?",
+    options: ["Mangora", "Jhelum", "Sawat", "None of these"],
+    answer: 1
+  }, // [13]
+  {
+    question: "The longest river in Pakistan is:",
+    options: ["River Ravi", "River Sindh", "River Cheenab", "River Jehlum"],
+    answer: 1
+  }, // [13]
+  {
+    question: "Which is the national flower of Pakistan?",
+    options: ["Lilly", "Rose", "Jasmine", "Tulip"],
+    answer: 2
+  }, // [13]
+  {
+    question: "Which is the national bird of Pakistan?",
+    options: ["Markhor", "Parrot", "Pigeon", "Chakor"],
+    answer: 3
+  }, // [13, 14]
+  {
+    question: "Who started the Faraizi Movement?",
+    options: ["Haji Shariat Ullah", "Allama Muhammad Iqbal", "Maulana Muhammad Ali Jauhar", "Sir Aga Khan"],
+    answer: 0
+  }, // [14]
+  {
+    question: "The ‘Kashaf-ul-Mahjub’ was written by:",
+    options: ["Hazrat Data Gunj Buksh (R.A)", "Maulana Altaf Hussain Hali", "Maulana Shibli Nomani", "Maulana Zakaullah"],
+    answer: 0
+  }, // [14]
+  {
+    question: "Who Reviewed the famous book “The Indian Musalmans” in 1872?",
+    options: ["Sir Syed Ahmed Khan", "Sir William Wilson Hunter", "M Delwar Hussain", "John King Fairbank"],
+    answer: 0
+  }, // [14]
+  {
+    question: "Indian Council Act 1858 was passed on:",
+    options: ["2nd August 1858", "18th July 1858", "24th October 1858", "3rd June 1858"],
+    answer: 0
+  }, // [14, 15]
+  {
+    question: "The book, “Khutbat e Ahmadia’ is written by:",
+    options: ["Dr. Safdar Mahmood", "Abdul Haleem Sharar", "Sir Syed Amir Ali", "Sir Syed Ahmad Khan"],
+    answer: 3
+  }, // [15]
+  {
+    question: "Indian Independence Act’ was enforced on:",
+    options: ["13th August 1947", "14th August 1947", "15th August 1947", "16th August 1947"],
+    answer: 1
+  }, // [15]
+  {
+    question: "Allama Muhammad Iqbal delivered his famous Allahabad Address in:",
+    options: ["1929", "1930", "1931", "1932"],
+    answer: 1
+  }, // [15, 16]
+  {
+    question: "In which year British East India Company occupied Punjab?",
+    options: ["1846", "1847", "1849", "1850"],
+    answer: 2
+  }, // [16]
+  {
+    question: "At the time of Independence which community was in majority in the state of Kashmir?",
+    options: ["Muslim", "Hindu", "Sikh", "Christian"],
+    answer: 0
+  }, // [16]
+  {
+    question: "Which state was attacked by India on 11th September 1948?",
+    options: ["State of Hyderabad Daccan", "State of Jammu and Kashmir", "State of Manavadar", "State of Junagarh"],
+    answer: 0
+  }, // [16]
     // {
     //   question: "Who was the founder of the Ottoman Empire?",
     //   options: ["Osman I", "Suleiman the Magnificent", "Mehmed II", "Selim I"],
